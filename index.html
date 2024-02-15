@@ -23,22 +23,6 @@
                 console.log(error);
             });</script>
 			
-      <script>
-    function onGameOver() {
-    // Вызов рекламы ВКонтакте
-    vkBridge.send('VKWebAppShowNativeAds', {})
-    .then((data) => {
-    if (data.result) {
-    console.log("Реклама успешно показана");
-    } else {
-    console.log("Не удалось показать рекламу");
-    }
-    })
-    .catch((error) => {
-    console.log("Ошибка при показе рекламы:", error);
-    });
-    }
-	</script>
 	
     <style>
         /* Убираем выделение по нажатию клавиш */
