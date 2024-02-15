@@ -22,7 +22,8 @@
                 // Ошибка
                 console.log(error);
             });</script>
-  
+			
+      <script>
     function onGameOver() {
     // Вызов рекламы ВКонтакте
     vkBridge.send('VKWebAppShowNativeAds', {})
@@ -37,6 +38,8 @@
     console.log("Ошибка при показе рекламы:", error);
     });
     }
+	</script>
+	
     <style>
         /* Убираем выделение по нажатию клавиш */
         canvas:focus {
